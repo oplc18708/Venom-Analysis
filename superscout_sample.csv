@@ -1,0 +1,4 @@
+hub_status,driver_ranking_1st,event_code,match_num,alliance,r1_team_num,r1_status,r1_auto_path_tag,r1_auto_notes,r2_team_num,r2_status,r3_team_num,r3_status,want_on_alliance,role_preference,reliability_flag,reliability_notes
+green,A,2026demo,1,red,111,Stable,Neutral Run,Fast leave,333,Minor brownout,444,Stable,Yes,Scorer,Yes,Good consistency
+yellow,B,2026demo,2,blue,222,Unstable,Stay Home,Conservative auto,555,Stable,666,Stable,No,Support,No,Needs tuning
+

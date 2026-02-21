@@ -1,0 +1,4 @@
+event_key,team,drivebase,intake,can_ferry,can_play_defense,climb_claim,auto_claim,preferred_role,known_issues
+2026demo,111,Swerve,Roller,Yes,Yes,Level 2,2-note,Scorer,None
+2026demo,222,WestCoast,Over-bumper,No,Yes,Level 1,1-note,Defense,Intermittent CAN faults
+

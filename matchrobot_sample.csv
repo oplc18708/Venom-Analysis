@@ -1,0 +1,4 @@
+composite_key,event_code,match_num,alliance,station,team_num,scouter_name,timestamp,robot_status,post_comments,shift1_status,shift1_scoring_cycles,shift1_scoring_json,shift2_status,shift2_prepared,shift2_inactive_activity,shift2_pass_estimate,end_climb_achieved,end_climb_result
+q1_red1_111,2026demo,1,red,1,111,Scout A,2026-02-01T10:00:00Z,Nominal,Clean run,Active,3,"[{""duration"":10,""bucket"":""10-20"",""accuracy"":""50%""}]",Inactive,Yes,Passing/Ferrying,1-10,Level 2,Success
+q1_blue2_222,2026demo,1,blue,2,222,Scout B,2026-02-01T10:00:05Z,Minor issue,Slow intake,Active,2,"[{""duration"":8,""bucket"":""1-10"",""accuracy"":""75%""}]",Inactive,No,Defense,0-5,Level 1,Failed late
+
