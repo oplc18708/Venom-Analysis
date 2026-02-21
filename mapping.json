@@ -1,0 +1,193 @@
+{
+  "raw": {
+    "event_key": [
+      "event_key",
+      "Event Key"
+    ],
+    "team": [
+      "Team Number",
+      "team",
+      "Team",
+      "team_number"
+    ],
+    "match": [
+      "match_number",
+      "Qual Number",
+      "Match",
+      "Match Number",
+      "match"
+    ],
+    "alliance": [
+      "alliance",
+      "Alliance"
+    ],
+    "start_position": [
+      "start_position",
+      "Start Position",
+      "starting_position"
+    ],
+    "auto_preload_result": [
+      "auto_preload_result",
+      "Auto Preload Result",
+      "auto preload result"
+    ],
+    "auto_leave_alliance_zone": [
+      "auto_leave_alliance_zone",
+      "Auto Leave Alliance Zone",
+      "auto leave alliance zone"
+    ],
+    "auto_enter_neutral_zone": [
+      "auto_enter_neutral_zone",
+      "Auto Enter Neutral Zone",
+      "auto enter neutral zone"
+    ],
+    "auto_alliance_zone_pickups": [
+      "auto_alliance_zone_pickups",
+      "Auto Alliance Zone Pickups",
+      "auto alliance zone pickups"
+    ],
+    "auto_score": [
+      "Auto Score",
+      "auto_score"
+    ],
+    "auto_win": [
+      "auto_win",
+      "Auto Win"
+    ],
+    "active_shooting_est": [
+      "active_shooting_est",
+      "Active Shooting Est",
+      "active shooting est"
+    ],
+    "active_shoot_bucket": [
+      "active_shoot_bucket",
+      "Active Shoot Bucket",
+      "active shoot bucket",
+      "active_shooting_bucket"
+    ],
+    "active_cycles": [
+      "active_cycles",
+      "Active Cycles",
+      "active cycles"
+    ],
+    "active_miss_heavy": [
+      "active_miss_heavy",
+      "Active Miss Heavy",
+      "active miss heavy"
+    ],
+    "active_defense_level": [
+      "active_defense_level",
+      "Active Defense Level",
+      "active defense level"
+    ],
+    "inactive_ferry_est": [
+      "inactive_ferry_est",
+      "Inactive Ferry Est",
+      "inactive ferry est"
+    ],
+    "ferried": [
+      "ferried",
+      "Ferried"
+    ],
+    "ferry_bucket": [
+      "ferry_bucket",
+      "Ferry Bucket"
+    ],
+    "played_defense": [
+      "played_defense",
+      "Played Defense"
+    ],
+    "defense_effective": [
+      "defense_effective",
+      "Defense Effective"
+    ],
+    "inactive_defense_level": [
+      "inactive_defense_level",
+      "Inactive Defense Level",
+      "inactive defense level"
+    ],
+    "inactive_prepped_to_shoot": [
+      "inactive_prepped_to_shoot",
+      "Inactive Prepped To Shoot",
+      "inactive prepped to shoot"
+    ],
+    "climb_level": [
+      "climb_level",
+      "Climb Level",
+      "climb level"
+    ],
+    "climb_failed": [
+      "climb_failed",
+      "Climb Failed",
+      "climb failed"
+    ],
+    "climb_time_bucket": [
+      "climb_time_bucket",
+      "Climb Time Bucket",
+      "climb time bucket"
+    ],
+    "endgame_kept_shooting": [
+      "endgame_kept_shooting",
+      "Endgame Kept Shooting",
+      "endgame kept shooting"
+    ],
+    "endgame_score": [
+      "Endgame Score",
+      "endgame_score"
+    ],
+    "tele_score": [
+      "Tele Score",
+      "tele_score"
+    ],
+    "total_score": [
+      "TotalScore",
+      "Total Score",
+      "total_score",
+      "total"
+    ],
+    "notes": [
+      "notes",
+      "Notes",
+      "scout_notes",
+      "Scout Notes"
+    ]
+  },
+  "schedule": {
+    "match": [
+      "Match",
+      "Match Number",
+      "Qual Number",
+      "qm"
+    ],
+    "red1": [
+      "Red 1",
+      "Red1",
+      "R1"
+    ],
+    "red2": [
+      "Red 2",
+      "Red2",
+      "R2"
+    ],
+    "red3": [
+      "Red 3",
+      "Red3",
+      "R3"
+    ],
+    "blue1": [
+      "Blue 1",
+      "Blue1",
+      "B1"
+    ],
+    "blue2": [
+      "Blue 2",
+      "Blue2",
+      "B2"
+    ],
+    "blue3": [
+      "Blue 3",
+      "Blue3",
+      "B3"
+    ]
+  }
+}

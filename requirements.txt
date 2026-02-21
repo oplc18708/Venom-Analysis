@@ -1,0 +1,9 @@
+pandas
+numpy
+duckdb
+requests
+streamlit
+matplotlib
+python-dotenv
+streamlit-drawable-canvas
+Pillow
