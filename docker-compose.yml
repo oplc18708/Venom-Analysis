@@ -1,0 +1,13 @@
+services:
+  venom-analysis:
+    build: .
+    container_name: venom-analysis
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./server_data:/data
+    environment:
+      - VENOM_DATA_DIR=/data
+      - STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
+    restart: unless-stopped
+

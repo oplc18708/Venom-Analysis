@@ -1,39 +1,45 @@
-# Venom Analysis – Event Builder (Offline-first)
+# Venom Analysis
 
-This tool takes your scouting CSVs and builds a single DuckDB database file (`.duckdb`) for an event.
-That database contains:
-- raw scouting rows (`raw`)
-- optional schedule (`schedule`)
-- optional pit data (`pit`)
-- optional cached TBA schedule (`tba_matches`) (prefetch online before event)
-- SQL views for team averages, consistency, and audits
+Venom Analysis is a Streamlit + DuckDB scouting analytics app with unified CSV/ZIP import for MatchRobot, Super Scout, Pit, and Schedule exports.
 
-## Quick start (Windows / Git Bash)
-1) Put your CSV files in a folder, e.g. `data/`
-   - `raw.csv` (required) – one row per team per match
-   - `schedule.csv` (optional)
-   - `pit.csv` (optional)
+## Local Run
 
-2) Install deps
 ```bash
-python -m pip install -r requirements.txt
+python3 -m venv venv
+source venv/bin/activate
+python3 -m pip install -r requirements.txt
+python3 -m streamlit run streamlit_app.py
 ```
 
-3) Build event DB
+Then import data in **Admin → Unified Import**.
+
+## Docker Run
+
+Build image:
+
 ```bash
-python event_builder.py build --raw data/raw.csv --out event_2026myevent.duckdb
+docker build -t venom-analysis:latest .
 ```
 
-Optional schedule/pit:
+Run container:
+
 ```bash
-python event_builder.py build --raw data/raw.csv --schedule data/schedule.csv --pit data/pit.csv --out event_2026myevent.duckdb
+docker run --rm -p 8501:8501 -e VENOM_DATA_DIR=/data -v "$(pwd)/server_data:/data" venom-analysis:latest
 ```
 
-Optional TBA prefetch (run at home with internet):
-```bash
-python event_builder.py prefetch-tba --event 2026myevent --out event_2026myevent.duckdb --tba-key YOUR_KEY
-```
+## Unraid Deployment
 
-## Notes
-- Column mapping can be automatic, but you’ll get best results by editing `mapping.json`.
-- All analytics live in SQL views inside the `.duckdb` file.
+See `README_UNRAID.md` for the exact template settings (path mapping, port mapping, and environment variable).
+
+## Sample Data
+
+Use files in `sample_data/` to validate auto-detect + normalization:
+- `sample_data/matchrobot_sample.csv`
+- `sample_data/superscout_sample.csv`
+- `sample_data/pit_sample.csv`
+- `sample_data/schedule_sample.csv`
+
+## Important
+
+- Do not commit DuckDB files (`*.duckdb`, `*.duckd`) or runtime data directories.
+- Runtime persistent data should live under `VENOM_DATA_DIR` (defaults to `./data` locally).
