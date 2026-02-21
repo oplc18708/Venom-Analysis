@@ -1,0 +1,16 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+data/
+uploads/
+exports/
+server_data/
+*.duckdb
+*.duckd
+
+.git/
+.github/
+.env
+.streamlit/
